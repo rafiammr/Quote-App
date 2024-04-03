@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ly_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Character : "
+                android:layout_marginHorizontal="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_anime" />
+
+            <TextView
+                android:id="@+id/tv_character_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kita bisa oke gass"
+                android:layout_marginHorizontal="8dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ly_character">
+
+            <TextView
+                android:id="@+id/tv_anime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginHorizontal="8dp"
+                android:text="Anime : " />
+
+            <TextView
+                android:id="@+id/tv_anime_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:layout_marginHorizontal="8dp"
+                android:text="Kita bisa oke gass" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ly_anime">
+
+            <TextView
+                android:id="@+id/tv_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Quote : " />
+
+            <TextView
+                android:id="@+id/tv_quote_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Kita bisa oke gass" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
