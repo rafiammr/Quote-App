@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Quote App</string>
     <string name="text_no_data">No Data</string>
+    <string name="text_character">Character :</string>
+    <string name="text_anime">Anime :</string>
+    <string name="text_quote">Quote :</string>
 </resources>
